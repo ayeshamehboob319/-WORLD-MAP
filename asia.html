@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Asia Map</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            min-height: 100%;
+        }
+
+        body {
+            background-color: #b5dce8;
+            text-align: center;
+            font-family: "Times New Roman", serif;
+        }
+
+        h1 {
+            font-size: 40px;
+            margin: 15px 0;
+        }
+
+        .map {
+            position: relative;
+            width: 60%;
+            margin: auto;
+        }
+
+        .map img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .country {
+            position: absolute;
+            display: block;
+            cursor: pointer;
+        }
+
+        .country:hover {
+            background-color: rgba(255, 255, 0, 0.35);
+            outline: 3px solid red;
+        }
+
+        /* IRAN */
+        .iran {
+            left: 19%;
+            top: 39%;
+            width: 13%;
+            height: 20%;
+        }
+
+        /* PAKISTAN */
+        .pakistan {
+            left: 30%;
+            top: 41%;
+            width: 10%;
+            height: 18%;
+        }
+
+        /* SAUDI ARABIA */
+        .saudi {
+            left: 9%;
+            top: 53%;
+            width: 17%;
+            height: 22%;
+        }
+
+        .back {
+            margin: 15px;
+        }
+
+        button {
+            padding: 10px 25px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>ASIA MAP</h1>
+
+    <div class="map">
+
+        <img src="images/asia-map.jpg" alt="Map of Asia">
+
+        <a href="iran.html"
+           class="country iran"
+           title="Iran">
+        </a>
+
+        <a href="pakistan.html"
+           class="country pakistan"
+           title="Pakistan">
+        </a>
+
+        <a href="saudi-arabia.html"
+           class="country saudi"
+           title="Saudi Arabia">
+        </a>
+
+    </div>
+
+    <div class="back">
+        <a href="index.html">
+            <button>Back to World Map</button>
+        </a>
+    </div>
+
+</body>
+</html>
